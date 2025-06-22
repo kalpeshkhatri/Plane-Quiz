@@ -403,14 +403,14 @@ formfinal.addEventListener('submit',(e)=>{
     //{answer1:   ,answer2:   ,answer3:   }
     // have aa form data par aapna ANS object ni value jode compare kari devanu.
     // let marks=0;
-    console.log(data.entries())
+    // console.log(data.entries())
     
     for (let [key,value] of data.entries()){
-        console.log(key,value)
+        // console.log(key,value)
         // key e answer{num} aapse temthi aa number ne kathvano 6e.
-        console.log(key)
+        // console.log(key)
         let n1=key.slice(6,key.length)
-        console.log(n1)
+        // console.log(n1)
         let parent1=document.getElementById(`question${n1-1}`);
         // aa element ma correct 6e ke wrong evu nakhvanu 6e.
         let element9=parent1.children[13]
@@ -425,8 +425,8 @@ formfinal.addEventListener('submit',(e)=>{
         parent1.append(element9)
         
     }
-    console.log(marks)
-    console.log(data)
+    // console.log(marks)
+    // console.log(data)
 
     // marks vala ma marks edit karva padse.
     element7.innerHTML=`MARKS:${marks}`;
@@ -434,7 +434,7 @@ formfinal.addEventListener('submit',(e)=>{
     // ahiya aapne correct answer par green color karvano 6e.
     const all_question1=document.getElementsByClassName('question');
     let k=1;
-    console.log(all_question1)
+    // console.log(all_question1)
     for (let question of all_question1){
         // console.log(question)
         let element=question;
@@ -452,6 +452,11 @@ formfinal.addEventListener('submit',(e)=>{
 // const element8=document.getElementById('form4');
 // console.log(element8)
 // console.log(element8.children[2])
+
+
+
+
+
 
 
 
